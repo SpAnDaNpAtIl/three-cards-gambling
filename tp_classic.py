@@ -63,7 +63,7 @@ def card_pattern_checker(user_cards):
             single_num_card = num_card[0]
         res+=twice_num_card/100 + single_num_card/10000
         return res
-    if(is_coloured_is_round(num_card, type_card) == [True, False]):
+    elif(is_coloured_is_round(num_card, type_card) == [True, False]):
         res+=2
         num_card.sort(reverse=True)
         biggest_card = num_card[0]
@@ -71,17 +71,17 @@ def card_pattern_checker(user_cards):
         smallest_card = num_card[2]
         if(biggest_card==13 and second_card==2 and smallest_card==1):
             #rangi chatti condition
-            res+=0.2 #still bigger than 0.1313
+            res=4.129 #just smaller than coloured first A K Q
         else:
             res+=biggest_card/100 + second_card/10000 + smallest_card/1000000
         return res
-    if(is_coloured_is_round(num_card, type_card) == [False, True]):
+    elif(is_coloured_is_round(num_card, type_card) == [False, True]):
         num_card.sort()
         res+=3
         biggest_card = num_card[-1]
         res+=biggest_card/100
         return res
-    if(is_coloured_is_round(num_card, type_card) == [True, True]):
+    elif(is_coloured_is_round(num_card, type_card) == [True, True]):
         num_card.sort()
         res+=4
         biggest_card = num_card[-1]
@@ -96,7 +96,7 @@ def card_pattern_checker(user_cards):
         num_card.sort()
         if(num_card[-1]==13 and num_card[0]==1 and num_card[1]==2):
             #chatti condition provided chatti is better than first
-            res+=3.2 #0.20 is bigger than max 0.1313`
+            res=3.129 #just smaller than 3.13 which is for A K Q
         else:
             biggest_card = num_card[-1]
             second_card = num_card[1]

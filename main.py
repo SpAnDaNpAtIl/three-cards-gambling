@@ -98,7 +98,7 @@ if __name__ == '__main__':
                 print('{}:Rs{}'.format(players_info[0][0], players_info[0][1]))
                 for j in lost_players:
                     print('{}:Rs{}'.format(j[0], j[1]))
-                break #need to exit out of code##########################################################
+                quit() #need to exit out of code##########################################################
 
         print('{} rounds are finished'.format(max_rounds))
         print('Final Standings are:')
