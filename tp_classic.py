@@ -1,10 +1,3 @@
-
-
-
-#patterns
-
-#have to check for chatti
-
 """
 twice 1
 coloured not round done 2
@@ -12,7 +5,6 @@ round not coloured done 3
 coloured round done 4
 thrice 5
 """
-
 
 
 def is_coloured(num_card, type_card):

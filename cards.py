@@ -1,6 +1,3 @@
-#cards file
-
-#import numpy as np
 import random
 
 card_types = [i+1 for i in range(13)] #1 is 2, 2 is 3 and so on till 13 is ace
