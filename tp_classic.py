@@ -39,7 +39,7 @@ def is_twice(num_card, type_card):
         return False
 
 def is_thrice(num_card, type_card):
-    if(len(list(set(num_card)))==3):
+    if(len(list(set(num_card)))==1):
         return True
     else:
         return False
@@ -113,6 +113,7 @@ def card_pattern_checker(user_cards):
 
 #print(card_pattern_checker([[6, 'Heart'], [2, 'Heart'], [9, 'Heart']]))
 #print(card_pattern_checker([[6, 'Spade'], [2, 'Spade'], [11, 'Spade']]))
+
 
 
 
